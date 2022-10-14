@@ -37,6 +37,13 @@ print("Najmniejsza z podanych liczb:",min(map(int, input("Podaj 4 dowolne liczny
 #print(min)
 
 # zad 5
+a, b, c = map(int, input("Podaj 3 długości boków trójkąta: ").split())
+if (a + b > c) and (a + c > b) and (b + c > a):
+    print("Tak, spełniają")
+else:
+    print("Nie, nie spełniają")
+
+# zad 6
 a, b, c = map(int, input("Wprowadź długości trzech boków trójkąta: ").split())
 if (a+b>c) and (b+c>a) and (a+c>b):
     max = a
