@@ -28,3 +28,19 @@ for i in range(n):
     for k in range(n-i-1, n):
         print("*", end="")
     print()
+
+    # zad 1
+# n = int(input())
+# for i in range(n):
+#     print("*-|", end="")
+# print()
+
+# zad 2
+n = int(input())
+for i in range(n):
+    print("*"*i, end="")
+    if i%2:
+        print("||", end="")
+    else:
+        print("--", end="")
+print()
