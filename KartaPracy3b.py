@@ -1,5 +1,4 @@
 ## zad 1
-#i = 1
 #for i in range(30):
 #    print(i+1, end=" ")
 
