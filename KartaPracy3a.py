@@ -61,6 +61,11 @@ print()
 #        print("*", end="")
 #    print()
 
+# zad 4
+#n = int(input())
+#for i in range(n):
+#    for j in range(n):
+#        if abs(i - j) == n//2 or i+j == n//2 or 
 
 # zad 5
 n = int(input())
