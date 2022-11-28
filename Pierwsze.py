@@ -66,11 +66,18 @@
 #    x += 1
 
 # NWD liczb (Najwiekszy wspolny dzielnik)
-a = int(input())
-b = int(input())
-while a != b:
-    if a > b:
-        a -= b
-    if b > a:
-        b -= a
+#a, b = map(int, input().split())
+#while a != b:
+#    if a > b:
+#        a -= b
+#    if b > a:
+#        b -= a
+#print(a)
+
+# Modula %
+a, b = map(int, input().split())
+r = int
+while b != 0:
+    print(f"{a}\t\t{b}\t\t{a%b}")
+    a, b = b, a % b
 print(a)
