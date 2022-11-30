@@ -76,7 +76,6 @@
 
 # Modula %
 a, b = map(int, input().split())
-r = int
 while b != 0:
     print(f"{a}\t\t{b}\t\t{a%b}")
     a, b = b, a % b
