@@ -75,8 +75,30 @@
 #print(a)
 
 # Modula %
+#a, b = map(int, input().split())
+#while b != 0:
+#    print(f"{a}\t\t{b}\t\t{a%b}")
+#    a, b = b, a % b
+#print(a)
+
+# NWW - Najmniejsza Wspolna Wielokrotnosc
+#a, b = map(int, input().split())
+#while a % b > 0:
+
+#a, b = map(int, input().split())
+#iloczyn = a * b
+#while a != b:
+#    if a > b:
+#        a -= b
+#    if b > a:
+#        b -= a
+#print("NWW: ", a)
+#nww = iloczyn // a
+#print("NWW:", nww)
+
 a, b = map(int, input().split())
-while b != 0:
-    print(f"{a}\t\t{b}\t\t{a%b}")
+iloczyn = a * b
+while b > 0:
     a, b = b, a % b
-print(a)
+print("NWD: ", a)
+print("NWW: ", iloczyn // a)
