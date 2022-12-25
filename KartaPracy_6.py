@@ -67,8 +67,25 @@
 #print(suma)
 
 # zad 8
-n = int(input())
-suma = 0
-for i in range(n):
-    suma += (3 * i + 2) * ((-1) ** i)
-print(suma)
+#n = int(input())
+#suma = 0
+#for i in range(n):
+#    suma += (3 * i + 2) * ((-1) ** i)
+#print(suma)
+
+# zad 9
+#n = int(input())
+#iloczyn = 1
+#for i in range(n):
+#    iloczyn *= (2 ** i) * ((-1) ** i)
+#print(iloczyn)
+
+# zad 10
+#n = int(input())
+#suma = 0
+#for i in range(1, n + 1):
+#    element = 1
+#    for j in range(1, i + 1):
+#        element *= j
+#    suma += element
+#print(suma)
