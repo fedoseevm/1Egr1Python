@@ -89,3 +89,50 @@
 #        element *= j
 #    suma += element
 #print(suma)
+
+# zad 11
+#n = int(input())
+#suma = 0
+#for i in range(n):
+#    suma += (1 + i * 2) / (i + 1) ** 2
+#print(suma)
+
+# zad 12
+#n = int(input())
+#licznik = 0
+#mianownik = 0
+#for i in range(n):
+#    licznik += 1 + i * 2
+#    mianownik += (i + 1) ** 2
+#print(licznik / mianownik)
+
+# zad 13
+#n = int(input())
+#suma = 0
+#for i in range(1, n + 1):
+#    suma += (i * 2) / (i ** 3 + 2)
+#print(suma)
+
+# zad 14
+#   :-/
+
+# zad 15
+#n = int(input())
+#iloczyn = 1
+#for i in range(1, n + 1):
+#    iloczyn *= (i + 2) / (2 ** i - 1)
+#print(f"{iloczyn:.20f}")
+# '.20f' okresla ilosc liczb po kropce
+
+# zad 16
+#n = int(input())
+#iloczyn = 1
+#a = 1
+#b = 2
+#temp = int
+#for i in range(n):
+#    iloczyn *= a / (2 ** i)
+#    temp = b
+#    b = a + temp
+#    a = temp
+#print(iloczyn)
