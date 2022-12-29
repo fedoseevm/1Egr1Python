@@ -108,3 +108,40 @@
 #    c, d = d, c % d
 #if c != 1:
 #    print(f"{a}/{b} = {czynnik}*({int(a1/c)}/{int(b/c)})")
+
+# zad 8
+#suma = 0
+#def dzielniki(n):
+#    suma = 0
+#    for i in range(1, n):
+#        if n % i == 0:
+#            suma += i
+#    return suma
+#for i in range(1, 10001):
+#    for j in range(1, 10001):
+#        if dzielniki(i) == j and dzielniki(j) == i and i != j:
+#            print(f"{i} i {j}")
+
+# ZROBIONE, ALE POTRZEBUJE ULEPSZEN
+# KOD JEST ZA CIEZKI DLA KONSOLI
+
+# zad 10
+#def czy_pierwsza(x):
+#    czy_p = True
+#    for i in range(2, int(x ** 0.5) + 1):
+#        if x % i == 0:
+#            czy_p = False
+#    if czy_p:
+#        return True
+#    else:
+#        return False
+#n = int(input())
+#if czy_pierwsza(n):
+#    if czy_pierwsza(n - 2):
+#        print(f"{n - 2} i {n}")
+#    elif czy_pierwsza(n + 2):
+#        print(f"{n} i {n + 2}")
+#    else:
+#        print("liczba nie ma blizniaka")
+#else:
+#    print("To nie jest liczba pierwsza")
