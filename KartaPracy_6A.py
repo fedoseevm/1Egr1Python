@@ -125,6 +125,38 @@
 # ZROBIONE, ALE POTRZEBUJE ULEPSZEN
 # KOD JEST ZA CIEZKI DLA KONSOLI
 
+# zad 9
+#def czy_pierwsza(x):
+#    czy_p = True
+#    for i in range(2, int(x ** 0.5) + 1):
+#        if x % i == 0:
+#            czy_p = False
+#    if czy_p:
+#        return True
+#    else:
+#        return False
+
+#def czy_prawp(a):
+#    lista = []
+#    czy_pp = False
+#    for k in range(2, a // 2 + 1):
+#        if a % k == 0 and czy_pierwsza(k):
+#            lista.append(k)
+#    for j in range(len(lista)):
+#        for h in range(len(lista)):
+#            if lista[j] * lista[h] == a:
+#                czy_pp = True
+#    if czy_pp:
+#        return True
+#    else:
+#        return False
+
+#res = []
+#for d in range(10, 100):
+#    if czy_prawp(d):
+#        res.append(d)
+#print(res)
+
 # zad 10
 #def czy_pierwsza(x):
 #    czy_p = True
