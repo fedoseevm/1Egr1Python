@@ -97,6 +97,15 @@
 #    suma += (1 + i * 2) / (i + 1) ** 2
 #print(suma)
 
+#n = int(input())
+#liczniki = 0
+#mianownik = 1
+#for i in range(1, n + 1):
+#    mianownik = mianownik * i**2
+#for i in range(1, i + 1):
+#    liczniki += (2 * i - 1) * mianownik // (i**2)
+#print(f"wynik: {liczniki}/{mianownik}")
+
 # zad 12
 #n = int(input())
 #licznik = 0
