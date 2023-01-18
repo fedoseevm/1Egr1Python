@@ -24,4 +24,5 @@ elif a > c:
         if d >= b:
             print(b - a)
         else:
-            print(d - c)
+            print(d - a)
+            
