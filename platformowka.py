@@ -6,14 +6,14 @@ if a == c:
     else:       # 3 6 3 8
         print(b - a)
 elif a < c:     # 3 6 7 9
-    if b == c:
+    if b == c:  # 2 4 4 7
         print(0)
-    elif b < c:
+    elif b < c: # 2 3 4 5
         print("NIE")
     else:
-        if b >= d:
+        if b >= d:  # 2 7 4 5
             print(d - c)
-        else:
+        else:       # 2 5 4 7
             print(b - c)
 elif a > c:
     if d == a:
