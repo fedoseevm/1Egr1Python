@@ -15,3 +15,10 @@ for i in range(len(W) - 1):
         H += W[i]
         ilosc = 1
 print(H)
+
+# Huffman odwrotnie
+huff = input()
+msg = ""
+for i in range(0, len(huff), 2):
+    msg += int(huff[i]) * huff[i + 1]
+print(msg)
