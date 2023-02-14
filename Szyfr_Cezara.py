@@ -42,3 +42,13 @@ szyfr = ""
 for i in range(len(napis)):
     szyfr = szyfr + chr(65 + (ord(napis[i]) - 65 + 3) % 26)
 print(napis, szyfr)
+
+#updated
+msg = input()
+szyfr = ""
+for i in range(len(msg)):
+    if msg[i] == " ":
+        szyfr += " "
+    else:
+        szyfr += chr(65 + (ord(msg[i]) - 65 + 4) % 26)
+print(szyfr)
