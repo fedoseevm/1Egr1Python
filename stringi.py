@@ -61,3 +61,8 @@ if X == Y:
     print("TAK")
 else:
     print("NIE")
+    
+# ONP - Odwrotna Notacja Polska
+# Obliczanie wartosci wyrarzenia ONP
+# 45 + 28 * +
+
