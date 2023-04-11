@@ -11,7 +11,6 @@ print(s, L)
 
 slowo = input()
 L = list(slowo)
-R = L.copy
 R = list(slowo)
 R.reverse()
 if L == R:
