@@ -65,3 +65,10 @@ else:
 # Obliczanie wartosci wyrarzenia ONP
 # 45 + 28 * +
 
+
+x = input()
+wynik = ""
+for literka in x:
+    if x.count(literka) == 1:
+        wynik += literka
+print(wynik)
