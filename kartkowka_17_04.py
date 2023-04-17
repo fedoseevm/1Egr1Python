@@ -6,7 +6,6 @@ for i in range(len(slowo) + 1):
 print("\n")
 
 # Zadanie 2
-
 napis = input()
 k = 0
 for i in range(len(napis) - 1):
