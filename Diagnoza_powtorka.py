@@ -71,3 +71,57 @@ def czy_pierwsza(a):
     return True
 print(f"Zadanie 1: {czy_pierwsza(a)}")
 print("\n")
+
+# Zad 2
+b = int(input())
+def czy_zlozona(b):
+    for i in range(2, int(b ** 0.5) + 1):
+        if b % i == 0:
+            return "Zlożona"
+    return "Pierwsza"
+print(f"Zadanie 2: {czy_zlozona(a)}")
+print("\n")
+
+# Zad 3
+l, m = map(int, input().split())
+def czy_wzglednie_pierwsze(l, m):
+    while m > 0:
+        l, m = m, l % m
+    if l == 1:
+        return "Względnie pierwsze"
+    return "Nie Względnie piersze"
+print(f"Zadanie 3: {czy_wzglednie_pierwsze(l, m)}")
+print("\n")
+
+# Zad 4
+slowo = input()
+def szyfr_cezara(slowo):
+    szyfr = ""
+    for i in range(len(slowo)):
+        szyfr += chr(65 + (ord(slowo[i]) - 65 + 3) % 26)
+    return szyfr
+print(f"zadanie 4: {szyfr_cezara(slowo)}")
+print("\n")
+
+# Zad 5
+a, b = map(int, input().split("/"))
+c, d = map(int, input().split("/"))
+
+def dodawanie_ulamkow(a, b, c, d):
+    wynik = (f"{a}/{b} + {c}/{d} = ")
+    nww = b * d // gcd(b, d)
+    a, b = a * (nww // b) + c * (nww // d), nww
+    a, b = a // gcd(a, b), b // gcd(a, b)
+    if a < b:
+        wynik += (f"{a}/{b}")
+    else:
+        iloczyn = a // b
+        a -= iloczyn * b
+        if a == 0:
+            wynik += (f"{iloczyn}")
+        else:
+            wynik += (f"{iloczyn}({a}/{b})")
+    return wynik
+
+print(f"zadanie 5: {dodawanie_ulamkow(a, b, c, d)}")
+print("\n")
