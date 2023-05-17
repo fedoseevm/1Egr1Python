@@ -125,3 +125,32 @@ def dodawanie_ulamkow(a, b, c, d):
 
 print(f"zadanie 5: {dodawanie_ulamkow(a, b, c, d)}")
 print("\n")
+
+# Zad 6
+x, y = map(int, input().split())
+def nww(x, y):
+    return x * y // gcd(x, y)
+print(f"zadanie 5: {nww(x, y)}")
+print("\n")
+
+# Napisy
+# Zad 1
+def ilosc_c(napis):
+    ilosc = 0
+    for i in range(len(napis)):
+        if napis[i] == 'c' or napis[i] == 'C':
+            ilosc += 1
+    return ilosc
+napis = input()
+print(f"zadanie 1: {ilosc_c(napis)}")
+print("\n")
+
+# Zad 2
+def czy_nierosn(slowo):
+    for i in range(len(slowo) - 1):
+        if ord(slowo[i]) < ord(slowo[i + 1]):
+            return "Literki nie sa w porzadku nierosnacym"
+    return "Porzadek nierosnacy"
+slowo = input()
+print(f"zadanie 1: {czy_nierosn(slowo)}")
+print("\n")
