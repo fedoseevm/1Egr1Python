@@ -152,5 +152,5 @@ def czy_nierosn(slowo):
             return "Literki nie sa w porzadku nierosnacym"
     return "Porzadek nierosnacy"
 slowo = input()
-print(f"zadanie 1: {czy_nierosn(slowo)}")
+print(f"zadanie 2: {czy_nierosn(slowo)}")
 print("\n")
