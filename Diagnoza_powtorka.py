@@ -154,3 +154,26 @@ def czy_nierosn(slowo):
 slowo = input()
 print(f"zadanie 2: {czy_nierosn(slowo)}")
 print("\n")
+
+# Zad 3
+wyraz1 = input("Wyraz 1: ")
+wyraz2 = input("Wyraz 2: ")
+wyraz3 = input("Wyraz 3: ")
+def najdluzszy_wyraz(a, b, c):
+    if len(a) > len(b) and len(a) > len(c):
+        return a
+    if len(a) > len(c) and len(a) == len(b):
+        return a, b
+    if len(a) > len(b) and len(a) == len(c):
+        return a, c
+    #
+    if len(b) > len(a) and len(b) == len(c):
+        return b, c
+    #
+    if len(c) > len(b) and len(c) > len(a):
+        return c
+    #
+    if len(a) == len(b) == len(c):
+        return a, b, c
+print(f"zadanie 3: {najdluzszy_wyraz(wyraz1, wyraz2, wyraz3)}")
+print("\n")
