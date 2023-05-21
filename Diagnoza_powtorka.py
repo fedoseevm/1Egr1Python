@@ -177,3 +177,69 @@ def najdluzszy_wyraz(a, b, c):
         return a, b, c
 print(f"zadanie 3: {najdluzszy_wyraz(wyraz1, wyraz2, wyraz3)}")
 print("\n")
+
+
+
+# Dodatkowo dzialania z napisami
+# Zad 1 Odwroc napis
+def odwrot(slowo):
+    return slowo[::-1]
+slowo1 = input()
+print(f"zadanie 1: {odwrot(slowo1)}")
+print("\n")
+
+# Zad 2 Zlicz wystapienia
+def ile_wystepuje(slowo, literka):
+    return slowo.count(literka)
+slowo2 = input("Podaj slowo: ")
+l = input("Policzyc wystapienia liczby ")
+print(f"zadanie 2: {ile_wystepuje(slowo2, l)}")
+print("\n")
+
+# Zad 3 Palindrom
+def czy_palindrom(slowo):
+    if slowo == slowo[::-1]:
+        return "Palindrom"
+    else:   
+        return "Nie palindrom"
+slowo3 = input()
+print(f"zadanie 3: {czy_palindrom(slowo3)}")
+print("\n")
+
+# Zad 4 Usun duplikaty
+def bez_dupl(slowo):
+    duplikaty = []
+    wynik = ""
+    for literka in slowo:
+        if not(literka in duplikaty):
+            duplikaty.append(literka)
+            wynik += literka
+    return wynik
+slowo4 = input()
+print(f"zadanie 4: {bez_dupl(slowo4)}")
+print("\n")
+
+# Zad 5 Zamien na akronim (akronim utworzony z pierwszych liter podanych slow)
+def akronim(wyraz):
+    wynik = wyraz[0]
+    for i in range(len(wyraz)):
+        if wyraz[i] == ' ':
+            wynik += wyraz[i + 1]
+    return wynik
+wyraz = input()
+print(f"zadanie 5: {akronim(wyraz)}")
+print("\n")
+
+# Zad 6 Rozdziel na słowa (Rozdzielenie oznacza sie symbolem '_')
+def rozdzielenie(napis):
+    wynik = []
+    k = 0
+    for i in range(len(napis)):
+        if napis[i] == '_':
+            wynik.append(napis[k:i])
+            k = i + 1
+    wynik.append(napis[k:])
+    return wynik
+napis = input()
+print(f"zadanie 6: {rozdzielenie(napis)}")
+print("\n")
